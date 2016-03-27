@@ -1,0 +1,85 @@
+== 소개
+
+A paragraph followed by a simple list with square bullets.
+
+[square]
+* Item 1
+* Item 2
+
+Here's how you say "`Hello, World!`" in Prawn:
+
+.Create a basic PDF document using Prawn
+[source,ruby]
+----
+require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end
+----
+
+Bullet
+
+* level 1
+** level 2
+*** level 3
+**** level 4
+***** level 5
+
+Ordered List
+
+. Protons
+. Electrons
+. Neutrons
+
+Labeled List
+
+Dairy::
+* Milk
+* Eggs
+Bakery::
+* Bread
+Produce::
+* Bananas
+
+
+[source]
+----
+# mysql -uroot -p  # <1>
+Enter password:  # <2>
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 33819
+Server version: 5.5.43
+
+Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show variables like 'c%';  # <3>
++--------------------------+----------------------------+
+| Variable_name            | Value                      |
++--------------------------+----------------------------+
+| character_set_client     | utf8                       |
+| character_set_connection | utf8                       |
+| character_set_database   | utf8                       |
+| character_set_filesystem | binary                     |
+| character_set_results    | utf8                       |
+| character_set_server     | utf8                       |
+| character_set_system     | utf8                       |
+| character_sets_dir       | /usr/share/mysql/charsets/ |
+| collation_connection     | utf8_general_ci            |
+| collation_database       | utf8_unicode_ci            |
+| collation_server         | utf8_unicode_ci            |
+| completion_type          | NO_CHAIN                   |
+| concurrent_insert        | AUTO                       |
+| connect_timeout          | 10                         |
++--------------------------+----------------------------+
+14 rows in set (0.00 sec)
+----
+<1> MySQL 서버에 로그인
+<2> MySQL 로그인 패스워드 입력
+<3> 데이터베이스의 character set 확인

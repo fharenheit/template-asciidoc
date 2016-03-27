@@ -1,0 +1,15 @@
+= AsciiDoctor PDF Example: User Guide
+EXEM, Inc.
+v2.0.0, 2015-07-01:
+:doctype: book
+:source-highlighter: coderay
+:listing-caption: Listing
+:pdf-page-size: A4
+:sectnums:
+:toc:
+:toc-title: Title
+:toclevels: 4
+:imagesdir: images
+:homepage: http://www.ex-em.com
+
+include::basic-example-include.adoc[Introduction]

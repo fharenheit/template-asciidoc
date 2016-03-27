@@ -1,0 +1,14 @@
+= AsciiDoctor PDF 예제: 사용자 가이드
+EXEM, Inc.
+v2.0.0, 2015-07-01:
+:doctype: book
+:source-highlighter: coderay
+:listing-caption: Listing
+:pdf-page-size: A4
+:toc:
+:toc-title: 목차
+:toclevels: 4
+:imagesdir: images
+:homepage: http://www.ex-em.com
+
+include::basic-example-include-kor.adoc[소개]
